@@ -7,6 +7,7 @@
 
 
 В файл /etc/security/access.conf добавляем строки:
+
 +:admin:ALL
 -:ALL:ALL
 
@@ -16,8 +17,10 @@
 таким образом задается запрет входа в выходные.
 
 объединяем эти 2 правил в файле /etc/pam.d/sshd:
+
 account  [success=1 default=ignore]     pam_access.so
 account  required     pam_time.so
+
 success=1 обозначает, что следующие правило игнорируется.
 
 
