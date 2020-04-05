@@ -26,7 +26,3 @@ Apr  5 22:52:18 rustam3-HP-ProBook-6460b sshd[1057]: fatal: Access denied for us
 Apr  5 22:52:37 rustam3-HP-ProBook-6460b sshd[1059]: Accepted password for testpam1 from 192.168.0.104 port 57353 ssh2  
 Apr  5 22:52:37 rustam3-HP-ProBook-6460b sshd[1059]: pam_unix(sshd:session): session opened for user testpam1 by (uid=0)  
 
-
-Список группы admin:  
-cat /etc/group | grep "^admin"  
-admin:x:1010:testpam1,testpam2
