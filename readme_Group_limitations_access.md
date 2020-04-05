@@ -6,13 +6,13 @@
 3. /etc/security/access.conf
 
 
-В файл /etc/security/access.conf добавляем строки:
+В файл /etc/security/access.conf добавляем строки:  
 +:admin:ALL  
 -:ALL:ALL
 
 
-В файл /etc/security/access.conf добавляем строки
-*;*;*;!Wd0000-2400
+В файл /etc/security/access.conf добавляем строки  
+*;*;*;!Wd0000-2400  
 таким образом задается запрет входа в выходные.
 
  объединяем эти 2 правила в файле /etc/pam.d/sshd:
