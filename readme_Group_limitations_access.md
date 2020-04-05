@@ -8,8 +8,8 @@
 
 В файл /etc/security/access.conf добавляем строки:
 
-+:admin:ALL
--:ALL:ALL
+ +:admin:ALL
+ -:ALL:ALL
 
 
 В файл /etc/security/access.conf добавляем строки
