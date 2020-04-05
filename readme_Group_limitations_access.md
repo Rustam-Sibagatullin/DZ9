@@ -18,7 +18,7 @@
 объединяем эти 2 правила в файле /etc/pam.d/sshd:  
 account  [success=1 default=ignore]     pam_access.so  
 account  required     pam_time.so  
-success=1 обозначает, что следующие правило игнорируется.
+success=1 обозначает, что следующие 1 правило игнорируется.
 
 
 Проверка логов /etc/log/auth.log:  
